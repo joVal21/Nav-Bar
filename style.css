@@ -4,6 +4,11 @@
 
 }
 
+/*Root below makes it easy to reuse a specific color*/
+:root {
+    --background: #e67e22;
+}
+
 body {
     margin: 0;
     background: #222;
@@ -20,7 +25,7 @@ body {
 
 
 header {
-    background-color: #e67e22;
+    background-color: var(--background)
 }
 
 
