@@ -10,10 +10,15 @@
 }
 
 body {
+    height: 150vh;
     margin: 0;
     background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
+    background-image: url(./images/backgrounds/Pete\ Alonso.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    place-items: center;
 
 }
 
@@ -25,7 +30,9 @@ body {
 
 
 header {
-    background-color: var(--background)
+    background-color: var(--background);
+    position: fixed;
+    width: 100%;
 }
 
 
