@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.container {
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #e67e22;
+}
+
+
+/*******************
+***NAV BAR*********/
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+/*Relative is very important for this list to make it work*/
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+
+/* this creates the line above the nav text. this creates the lines but HIDES it due to the 0 width */
+nav a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+
+}
+
+nav a:hover::before {
+    width: 100%;
+    transition: all ease-in 200ms;
+}
